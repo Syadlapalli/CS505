@@ -2,7 +2,7 @@
 
 /**
  * 
- * @author Sarath
+ * @author Sharath
  *
  */
 public class Fan {
@@ -12,45 +12,45 @@ public class Fan {
 	private static int MEDIUM=2;
 	private static int FAST=3;
 	
-	private int fanSpeed=STOPPED;
+	private int Fan_Speed=STOPPED;
 	private boolean isFanOn;
-	private Integer fanRadius=6;
-	private String fanColor;
+	private Integer Fan_Radius=6;
+	private String Fan_Color;
 	
 	public Fan() {
 		
 	}
 	
-	public Fan(int fanSpeed, boolean isFanOn, double fanRadius, String fanColor) {
+	public Fan(int Fan_Speed, boolean isFanOn, double Fan_Radius, String Fan_Color) {
 		
-		this.fanSpeed = fanSpeed;
+		this.Fan_Speed = Fan_Speed;
 		this.isFanOn = isFanOn;
-		this.fanRadius = fanRadius;
-		this.fanColor = fanColor;
+		this.Fan_Radius = Fan_Radius;
+		this.Fan_Color = Fan_Color;
 	}
 
 
 
 	/**
-	 * @return the fanSpeed
+	 * @return Fan_Speed
 	 */
-	public int getFanSpeed() {
-		return fanSpeed;
+	public int getfanSpeed() {
+		return Fan_Speed;
 	}
 
 
 
 	/**
-	 * @param fanSpeed the fanSpeed to set
+	 * @set param fanSpeed
 	 */
-	public void setFanSpeed(int fanSpeed) {
-		this.fanSpeed = fanSpeed;
+	public void setFanSpeed(int Fan_Speed) {
+		this.Fan_Speed = Fan_Speed;
 	}
 
 
 
 	/**
-	 * @return the isFanOn
+	 * @return isFanOn
 	 */
 	public boolean isFanOn() {
 		return isFanOn;
@@ -59,7 +59,7 @@ public class Fan {
 
 
 	/**
-	 * @param isFanOn the isFanOn to set
+	 * @set param isFanOn
 	 */
 	public void setFanOn(boolean isFanOn) {
 		this.isFanOn = isFanOn;
@@ -68,37 +68,37 @@ public class Fan {
 
 
 	/**
-	 * @return the fanRadius
+	 * @return Fan_Radius
 	 */
 	public double getFanRadius() {
-		return fanRadius;
+		return Fan_Radius;
 	}
 
 
 
 	/**
-	 * @param fanRadius the fanRadius to set
+	 * @set param Fan_Radius
 	 */
-	public void setFanRadius(double fanRadius) {
-		this.fanRadius = fanRadius;
+	public void setFanRadius(double Fan_Radius) {
+		this.Fan_Radius = Fan_Radius;
 	}
 
 
 
 	/**
-	 * @return the fanColor
+	 * @return fanColor
 	 */
 	public String getFanColor() {
-		return fanColor;
+		return Fan_Color;
 	}
 
 
 
 	/**
-	 * @param fanColor the fanColor to set
+	 * @set param fanColor
 	 */
-	public void setFanColor(String fanColor) {
-		this.fanColor = fanColor;
+	public void setFanColor(String Fan_Color) {
+		this.Fan_Color = Fan_Color;
 	}
 
 	/* (non-Javadoc)
@@ -107,9 +107,9 @@ public class Fan {
 	@Override
 	public String toString() {
 		if(isFanOn) {
-			return "The Fan speed is set to " +fanSpeed +" with a color of "+ fanColor +" and radius is of "  + fanRadius;
+			return "The Fan speed is set to " +Fan_Speed +" with a color of "+ Fan_Color +" and radius is of "  + Fan_Radius;
 		}else {
-			return "The Fan is white with a radious of " + fanRadius + " and the fan is off";
+			return "The Fan is white with a radius of " + Fan_Radius + " and the fan is off";
 		}
 		
 	}
